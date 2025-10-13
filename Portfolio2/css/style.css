@@ -5,21 +5,21 @@ body {
     font-style: normal;
     justify-content: center;
     align-items: stretch;
-    background-color: lavenderblush;
+    background-color: #FFFAFA;
 }
 
 .container {
-    background-color: lavenderblush;
+    background-color: #FFC0CB;
 }
 
 header {
-    background-color: lavenderblush;
-    color: palevioletred;
+    background-color: #FFC0CB;
+    color: #FFEDFA;
     text-align: center;
 }
 
 .left {
-    background-color: lavenderblush;
+    background-color: #BE5985;
 }
 
 /* ===== NAVIGATION ===== */
@@ -89,7 +89,7 @@ p {
 }
 
 .right {
-    background-color: #e4b6b6;
+    background-color: #BE5985;
 }
 
 table, th, td {
