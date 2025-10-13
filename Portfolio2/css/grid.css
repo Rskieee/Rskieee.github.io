@@ -5,28 +5,38 @@
 }
 
 body {
+  min-height: 100vh;
   font-family: "Poppins", sans-serif;
   background-color: #fff8fb;
   display: flex;
   justify-content: center;
+  align-items: stretch;
+  background-color: #fff8fb; /* soft warm pink */
+  font-family: "Quicksand", sans-serif;
   align-items: flex-start;
   min-height: 100vh;
-  line-height: 1.7; /* more breathing room */
 }
 
-/* MAIN GRID CONTAINER */
+/* MAIN CONTAINER */
 .container {
   display: grid;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
+    "header"
+    "main"
+    "footer";
     "header header header"
     "left mid right"
     "footer footer footer";
-  grid-template-columns: 230px 1fr 280px;
+  grid-template-columns: 250px 1fr 250px;
   grid-template-rows: auto 1fr auto;
   width: 90%;
   max-width: 1200px;
+  background-color: #ffffff;
   background: #ffffff;
   border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(255, 192, 203, 0.3);
+  margin: 30px auto;
   overflow: hidden;
   box-shadow: 0 4px 25px rgba(255, 182, 193, 0.4);
   margin: 2rem 0;
@@ -35,20 +45,26 @@ body {
 /* HEADER */
 header {
   grid-area: header;
+  padding: 1.2rem;
   text-align: center;
   padding: 1.5rem;
   background: linear-gradient(135deg, #ffe0ec, #ffd6e8);
   color: #b5476f;
   font-size: 1.8rem;
   font-weight: 600;
-  letter-spacing: 1px;
 }
 
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 200px 1fr 250px;
+  gap: 1.5rem;
 /* LEFT SIDEBAR */
 .left {
   grid-area: left;
   background-color: #fff1f8;
   padding: 1.5rem;
+  text-align: center;
   border-right: 2px solid #ffd6e8;
 }
 
@@ -57,8 +73,9 @@ header {
   grid-area: mid;
   background-color: #ffffff;
   padding: 2rem;
+  background-color: #fff5f8;
   color: #663c52;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 /* RIGHT SIDEBAR */
@@ -75,7 +92,9 @@ footer {
   background-color: #ffe0ec;
   text-align: center;
   padding: 1rem;
+  background-color: #ffe6f2;
+  color: #c0548a;
   color: #8a3a5b;
   font-weight: 500;
-  border-top: 2px solid #ffd6e8;
+  letter-spacing: 0.5px;
 }
