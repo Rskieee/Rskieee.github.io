@@ -1,4 +1,3 @@
-/* 🌸 Reset and Base Setup */
 * {
     margin: 0;
     padding: 0;
@@ -8,65 +7,45 @@
 body {
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    background-color: #FFF5F8; /* soft pink background */
-    font-family: "Quicksand", sans-serif;
 }
 
-/* 🌷 Main Container Grid */
 .container {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    grid-template-areas:
+    grid-template-areas: 
         "header"
         "main"
         "footer";
     max-width: 1200px;
     min-height: 100vh;
-    background-color: #FFD6E8; /* light pastel pink */
-    border-radius: 20px;
-    box-shadow: 0 6px 15px rgba(255, 182, 193, 0.3);
-    overflow: hidden;
 }
 
-/* 💕 Header */
 header {
     grid-area: header;
-    padding: 1.5rem;
-    background-color: #FFE6F2; /* lighter pink for header */
-    border-bottom: 2px dashed #FFB6C1;
-    text-align: center;
+    padding: 1rem;
 }
 
-/* 🍓 Main Grid Layout */
 main {
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     gap: 1rem;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
-/* 💗 Section Styles */
-.left, .mid, .right {
-    background-color: #FFF0F6; /* very soft pink panels */
-    border-radius: 15px;
-    padding: 1.2rem;
-    box-shadow: 0 3px 8px rgba(255, 192, 203, 0.25);
-    transition: transform 0.3s ease;
+.left {
+    padding: 1rem;
 }
 
-.left:hover, .mid:hover, .right:hover {
-    transform: scale(1.02);
+.mid {
+    padding: 1rem;
 }
 
-/* 🌼 Footer */
+.right {
+    padding: 1rem;
+}
+
 footer {
     grid-area: footer;
     padding: 1rem;
-    background-color: #FFE6F2;
-    text-align: center;
-    border-top: 2px dashed #FFB6C1;
-    color: #C0548A;
-    font-weight: 500;
 }
