@@ -14,7 +14,7 @@ body {
 
 header {
     background-color: lavenderblush;
-    color: white;
+    color: palevioletred;
     text-align: center;
 }
 
@@ -31,7 +31,7 @@ header {
 
 li a {
   display: block;
-  color: #6B3F69;
+  color: palevioletred;
   padding: 8px 16px;
   text-decoration: none;
   text-align: center;
@@ -39,7 +39,7 @@ li a {
 
 li a:hover {
   background-color: lavenderblush;
-  color: white;
+  color: palevioletred;
 }
 
 .mid {
@@ -83,7 +83,7 @@ div.gallery-item div.desc {
 p {
     margin-top: 20px; 
     text-align: center; 
-    color: #8D5F8C; 
+    color: palevioletred; 
     vertical-align: middle;
     padding-bottom: 20px;
 }
@@ -93,7 +93,7 @@ p {
 }
 
 table, th, td {
-    border: 2px solid #6B3F69;
+    border: 2px solid hotpink;
     border-collapse: collapse;
     padding: 10px;
     padding-bottom: 20px;
@@ -101,7 +101,7 @@ table, th, td {
 }
 
 footer {
-    background-color: #6B3F69;
-    color: white;
+    background-color: lavenderblush;
+    color: palevioletred;
     text-align: center;
 }
