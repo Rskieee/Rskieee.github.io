@@ -1,25 +1,25 @@
 body {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: 400;
     font-style: normal;
     justify-content: center;
     align-items: stretch;
-    background-color: #FFFAFA;
+    background-color: #FFF5F8; /* softer background pink */
 }
 
 .container {
-    background-color: #FFC0CB;
+    background-color: #FFD6E8; /* light cotton-candy pink */
 }
 
 header {
-    background-color: #FFEDFA;
-    color: #BE5985;
+    background-color: #FFE6F2; /* baby pink header */
+    color: #C0548A; /* soft rose text */
     text-align: center;
 }
 
 .left {
-    background-color: #EC7FA9;
+    background-color: #F8AFC7; /* muted bubblegum pink */
 }
 
 /* ===== NAVIGATION ===== */
@@ -31,42 +31,49 @@ header {
 
 li a {
   display: block;
-  color: #FFEDFA;
+  color: #FFF0F6; /* almost white pink */
   padding: 8px 16px;
   text-decoration: none;
   text-align: center;
+  border-radius: 10px;
+  transition: 0.3s ease;
 }
 
 li a:hover {
-  background-color: lavenderblush;
-  color: palevioletred;
+  background-color: #FFD9E8; /* blush pink hover */
+  color: #C0548A; /* rose text */
+  transform: scale(1.05);
 }
 
 .mid {
-    background-color: lavenderblush;
-    padding: 20px 16px 20px 16px;
-    text-decoration: none;
+    background-color: #FFF0F6; /* light pastel pink */
+    padding: 20px 16px;
     text-align: center;
+    border-radius: 15px;
 }
 
 ul.a {list-style-type: circle;}
-
 ul.b {list-style-type: disc;}
 
 div.gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  gap: 10px;
 }
 
 div.gallery-item {
   margin: 5px;
-  border: 2px solid hotpink;
+  border: 2px solid #FFB6C1; /* soft pink border */
   width: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s ease;
 }
 
 div.gallery-item:hover {
-  border: 2px solid hotpink;
+  transform: scale(1.05);
+  border-color: #FF92AD; /* brighter pink when hovered */
 }
 
 div.gallery-item img {
@@ -75,33 +82,37 @@ div.gallery-item img {
 }
 
 div.gallery-item div.desc {
-  padding: 15px;
+  padding: 12px;
   text-align: center;
+  color: #C0548A;
 }
 
-/* ===== TEXT ON INDEX ===== */
+/* ===== TEXT ===== */
 p {
     margin-top: 20px; 
     text-align: center; 
-    color: palevioletred; 
+    color: #C0548A; 
     vertical-align: middle;
     padding-bottom: 20px;
 }
 
 .right {
-    background-color: #EC7FA9;
+    background-color: #F8AFC7;
 }
 
 table, th, td {
-    border: 2px solid hotpink;
+    border: 2px solid #FFB6C1;
     border-collapse: collapse;
     padding: 10px;
-    padding-bottom: 20px;
     text-align: center;
+    color: #C0548A;
+    background-color: #FFF0F6;
 }
 
 footer {
-    background-color: lavenderblush;
-    color: palevioletred;
+    background-color: #FFE6F2;
+    color: #C0548A;
     text-align: center;
+    padding: 10px;
+    border-top: 2px solid #FFD6E8;
 }
