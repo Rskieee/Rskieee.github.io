@@ -1,51 +1,75 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Page base setup */
 body {
-    min-height: 100vh;
-    display: flex;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fff6fb;
 }
 
+/* Main container structure */
 .container {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-    max-width: 1200px;
-    min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  max-width: 1200px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
 }
 
+/* Header positioning */
 header {
-    grid-area: header;
-    padding: 1rem;
+  grid-area: header;
+  padding: 1rem;
+  text-align: center;
 }
 
+/* Main content grid (3-column layout) */
 main {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    gap: 1rem;
-    padding: 1rem;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
 }
 
+/* Each section within the grid */
 .left {
-    padding: 1rem;
+  grid-column: 1;
+  padding: 1rem;
 }
 
 .mid {
-    padding: 1rem;
+  grid-column: 2;
+  padding: 1rem;
 }
 
 .right {
-    padding: 1rem;
+  grid-column: 3;
+  padding: 1rem;
 }
 
+/* Footer layout */
 footer {
-    grid-area: footer;
-    padding: 1rem;
+  grid-area: footer;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Basic table alignment */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: center;
 }
