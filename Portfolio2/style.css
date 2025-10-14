@@ -6,6 +6,42 @@ body {
   background-color: #fff4f9;
   color: #3c2c35;
   line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* NAVIGATION BAR */
+nav {
+  background-color: #b45777;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 15px 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #f7b2c4;
+  color: #4a2c3a;
 }
 
 /* HEADER */
