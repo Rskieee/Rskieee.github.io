@@ -68,3 +68,82 @@ footer {
   border-top: 3px solid #f7b2c4;
   border-radius: 0 0 8px 8px;
 }
+
+/* GRID LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  min-height: 100vh;
+}
+
+/* SIDEBAR NAVIGATION */
+.sidebar {
+  background-color: #b45777;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar .logo {
+  font-size: 1.8rem;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #f7b2c4;
+  color: #4a2c3a;
+}
+
+/* MAIN CONTENT */
+.content {
+  padding: 40px;
+  overflow-y: auto;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+  }
+
+  .sidebar ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .sidebar li {
+    margin: 5px;
+  }
+}
