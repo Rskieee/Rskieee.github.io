@@ -9,8 +9,6 @@
 body {
   background-color: #fff5f8;
   color: #3a2b2b;
-  display: grid;
-  grid-template-columns: 220px 1fr;
   min-height: 100vh;
 }
 
@@ -23,6 +21,8 @@ nav {
   align-items: center;
   border-right: 4px solid #b45777;
   position: fixed;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 220px;
 }
@@ -59,13 +59,13 @@ nav ul li a:hover {
   color: #b45777;
 }
 
-/* ====== GRID ====== */
+/* ====== CONTAINER ====== */
 .container {
+  margin-left: 220px; /* pushes content beside the sidebar */
+  padding: 30px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  margin-left: 240px;
-  padding: 30px;
 }
 
 /* ====== SECTIONS ====== */
@@ -74,6 +74,8 @@ section {
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 section h2 {
@@ -128,4 +130,54 @@ footer {
   padding: 20px;
   color: #b45777;
   font-weight: bold;
+}
+
+/* ====== SCROLLBAR (optional aesthetic) ====== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #b45777;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff5f8;
+}
+
+/* ====== MOBILE RESPONSIVE ====== */
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    border-right: none;
+    border-bottom: 4px solid #b45777;
+  }
+
+  nav h2 {
+    font-size: 1.1em;
+    margin-bottom: 0;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  nav ul li a {
+    padding: 8px 10px;
+    font-size: 0.9em;
+  }
+
+  .container {
+    margin-left: 0;
+    padding: 20px;
+  }
 }
