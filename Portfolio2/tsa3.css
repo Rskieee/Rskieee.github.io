@@ -1,0 +1,87 @@
+/* GLOBAL STYLING */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff4f9;
+  color: #3c2c35;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #ffd6e8, #ffeaf3);
+  color: #b45777;
+  text-align: center;
+  padding: 50px 20px;
+  border-bottom: 3px solid #f7b2c4;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+}
+
+/* SECTIONS */
+section {
+  background: #ffffff;
+  width: 80%;
+  margin: 40px auto;
+  padding: 25px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(180, 87, 119, 0.15);
+}
+
+/* PROFILE IMAGE */
+.profile-photo {
+  display: block;
+  margin: 0 auto 20px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f7b2c4;
+}
+
+/* TITLES */
+h2 {
+  color: #b45777;
+  border-bottom: 2px solid #f7b2c4;
+  padding-bottom: 5px;
+}
+
+/* LISTS */
+ul {
+  list-style-type: circle;
+  margin-left: 30px;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid #f7b2c4;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: lavenderblush;
+  color: #b45777;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background-color: #ffd6e8;
+  color: #b45777;
+  text-align: center;
+  padding: 15px;
+  font-style: italic;
+  border-top: 3px solid #f7b2c4;
+}
