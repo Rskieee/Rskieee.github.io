@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ArtEvo — Login / Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="left">
+      <img src="logo.png" alt="ArtEvo Logo" />
+      <h1>Connect and Share Your Creative World</h1>
+      <p>Join ArtEvo to explore, showcase, and grow with a community of artists and creators worldwide.</p>
+    </div>
+
+    <div class="right">
+      <div class="card" id="authCard">
+        <div class="tabs">
+          <button id="tabLogin" class="active">Log in</button>
+          <button id="tabSignup">Sign up</button>
+        </div>
+
+        <form id="loginForm">
+          <label for="li-identifier">Email or phone</label>
+          <input id="li-identifier" name="identifier" type="text" placeholder="Email or phone" required />
+
+          <label for="li-password" style="margin-top:10px">Password</label>
+          <input id="li-password" name="password" type="password" placeholder="Password" required />
+
+          <div class="login-helpers">
+            <label class="small"><input type="checkbox" id="rememberMe"> Remember me</label>
+            <a href="#" id="forgotLink" class="small">Forgot password?</a>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn">Log In</button>
+            <button type="button" id="demoBtn" class="btn secondary">Demo User</button>
+          </div>
+          <div id="loginMsg" class="error" role="status" aria-live="polite"></div>
+        </form>
+
+        <form id="signupForm" style="display:none;margin-top:12px">
+          <div class="row">
+            <div class="col">
+              <label for="su-first">First name</label>
+              <input id="su-first" type="text" placeholder="First name" required />
+            </div>
+            <div class="col">
+              <label for="su-last">Last name</label>
+              <input id="su-last" type="text" placeholder="Last name" required />
+            </div>
+          </div>
+
+          <label for="su-identifier" style="margin-top:10px">Mobile number or email</label>
+          <input id="su-identifier" type="text" placeholder="Email or phone" required />
+
+          <label for="su-password" style="margin-top:10px">New password</label>
+          <input id="su-password" type="password" placeholder="At least 6 characters" minlength="6" required />
+
+          <label for="su-bday" style="margin-top:10px">Birthday</label>
+          <input id="su-bday" type="text" placeholder="MM/DD/YYYY (optional)" />
+
+          <label style="margin-top:10px">Gender (optional)</label>
+          <select id="su-gender">
+            <option value="">Prefer not to say</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select>
+
+          <div style="margin-top:10px" class="muted small">By clicking Sign up you agree to ArtEvo's Terms, Data Policy and Cookie Policy.</div>
+
+          <div class="actions">
+            <button type="submit" class="btn">Sign Up</button>
+            <button type="button" id="cancelSignup" class="btn secondary">Cancel</button>
+          </div>
+
+          <div id="signupMsg" class="error" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+      <div class="footer muted">Demo only — HTML, CSS, and JavaScript with localStorage simulation.</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
