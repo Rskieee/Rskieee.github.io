@@ -1,0 +1,92 @@
+:root {
+  --main-color: #d4a017; /* matches logo yellow */
+  --dark: #1e1e1e;
+  --light: #fffaf0;
+  --accent: #f9e79f;
+  --danger: #e74c3c;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+body {
+  background-color: var(--accent);
+  margin: 0;
+  height: 100%;
+}
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+.left {
+  background: var(--main-color);
+  color: var(--dark);
+  padding: 40px;
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+}
+.left img {
+  width: 200px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.right {
+  width: 400px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.tabs button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background: #f2f2f2;
+  font-weight: bold;
+}
+.tabs button.active {
+  background: var(--main-color);
+  color: white;
+}
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.btn {
+  background: var(--main-color);
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn.secondary {
+  background: #ddd;
+  color: black;
+}
+.error {
+  color: var(--danger);
+  font-size: 13px;
+  margin-top: 8px;
+}
+.footer {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+}
+
